@@ -4,3 +4,4 @@ python-dotenv
 psycopg2-binary
 langchain
 openai
+gpt4all
