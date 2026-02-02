@@ -1,0 +1,38 @@
+{
+  "tables": {
+    "customers": {
+      "columns": {
+        "customer_id": "INTEGER",
+        "name": "TEXT",
+        "email": "TEXT",
+        "country": "TEXT",
+        "created_at": "DATE"
+      }
+    },
+    "orders": {
+      "columns": {
+        "order_id": "INTEGER",
+        "customer_id": "INTEGER",
+        "order_date": "DATE",
+        "total_amount": "DECIMAL"
+      }
+    },
+    "order_items": {
+      "columns": {
+        "order_item_id": "INTEGER",
+        "order_id": "INTEGER",
+        "product_id": "INTEGER",
+        "quantity": "INTEGER",
+        "price": "DECIMAL"
+      }
+    },
+    "products": {
+      "columns": {
+        "product_id": "INTEGER",
+        "product_name": "TEXT",
+        "category": "TEXT",
+        "price": "DECIMAL"
+      }
+    }
+  }
+}
