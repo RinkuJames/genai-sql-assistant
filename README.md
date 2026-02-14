@@ -53,6 +53,7 @@ Open http://127.0.0.1:8000/docs to test via Swagger UI
 # Output Response
 <img width="975" height="566" alt="image" src="https://github.com/user-attachments/assets/9b737f33-6683-42d7-876e-77b241c642c3" />
 
+
 # Show total sales by customer for last month
 # Request : POST /query 
 {
@@ -63,6 +64,8 @@ Open http://127.0.0.1:8000/docs to test via Swagger UI
   "question": "Show total sales by customer for last month",
   "generated_sql": "SELECT c.customer_id, c.name, SUM(o.total_amount) AS total_sales FROM customers c JOIN orders o ON                          c.customer_id = o.customer_id WHERE o.order_date >= DATEADD(MONTH, -1, CURRENT_DATE) GROUP BY                               c.customer_id, c.name ORDER BY total_sales DESC;"
 }
+
+
 <img width="975" height="553" alt="image" src="https://github.com/user-attachments/assets/1b6a894a-7994-44c0-8423-6fbc379bf7f2" />
 
 # Output Response
